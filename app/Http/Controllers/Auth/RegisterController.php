@@ -23,7 +23,7 @@ class RegisterController extends Controller
 
         event(new Registered($user));
 
-        return response()->json(['message' => "Registerd Successfully!"]);
+        return response()->json(['message' => "Registerd Successfully! You will be redirected in a moment."]);
             
     }    
 }
