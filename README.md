@@ -62,3 +62,16 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## How to run 
+
+RUN `composer install` to install all dependencies
+
+RUN `./vendor/bin/sail up`
+
+Once done you can visit these ff URL: 
+
+http://localhost:80 for the backend
+http://localhost:8000 for Php MyAdmin
+http://localhost:8025 for Mailhog
