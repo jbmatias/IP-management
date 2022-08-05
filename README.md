@@ -75,3 +75,7 @@ Once done you can visit these ff URL:
 http://localhost:80 for the backend
 http://localhost:8000 for Php MyAdmin
 http://localhost:8025 for Mailhog
+
+## Unit test
+
+RUN `./vendor/bin/pest`
