@@ -46,15 +46,7 @@ class User extends Authenticatable implements MustVerifyEmail
 
     protected static function boot()
     {
-        parent::boot();
-
-        static::updating(function (User $model) {
-            Log::info('test');
-        });
-
-        static::created(function (User $model) {
-            Log::info('test');
-        });
+        parent::boot();        
         
     }
 

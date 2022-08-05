@@ -16,7 +16,7 @@ class StoreIpAddressController extends Controller
      */
     public function __invoke(StoreIpAddressRequest $request)
     {
-        $ip = StoreIpAddressAction::run($request->validated());
+        $ip = StoreIpAddressAction::run($request->user(), $request->validated());
         
         return response()->json([
             'message' => 'IP has been added successfully',
