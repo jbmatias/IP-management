@@ -11,8 +11,8 @@ class StoreIpAddressAction
 {
     use AsAction;
 
-    public function handle(array $input): IpAddress
+    public function handle(User $user, array $input): IpAddress
     {
-        return auth()->user()->ipAddresses()->create($input);
+        return $user->ipAddresses()->create($input);
     }
 }

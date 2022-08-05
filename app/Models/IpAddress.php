@@ -11,6 +11,6 @@ class IpAddress extends Model
 
     protected $fillable = [
         'ip',
-        'label'
+        'label'        
     ];
 }
